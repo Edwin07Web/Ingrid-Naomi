@@ -615,7 +615,7 @@ footer{
   
 }
 
-@media(max-width:416px){
+@media(max-width:433px){
   body{
 	position: absolute;
     background-color:#ff0000;
