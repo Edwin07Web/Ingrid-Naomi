@@ -615,9 +615,10 @@ footer{
   
 }
 
-@media(max-width:431px){
+@media(max-width:416px){
   body{
-    position: absolute;
+	position: absolute;
+    background-color:#ff0000;
   }
   html{
       font-size: 40%;
