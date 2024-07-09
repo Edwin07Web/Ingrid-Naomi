@@ -487,6 +487,13 @@ section{
     }
 }
 
+@media (max-width:461px){
+    
+    .home{
+        background-size: 50%;
+        background-color: #ffbd09;
+    }
+}
 
 @media (max-width:434px){
     
