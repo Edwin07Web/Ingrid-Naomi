@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+
+*{
+    font-family: "Dancing Script", cursive;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+:root{
+    --black: #000000;
+    --white : #F0F0F0;
+    --red:#ff0000;
+    --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Scrooll */
+html{
+    font-size: 62.5%;   
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: var(--red);
+    border-radius: 5rem;
+}
+
+/*El menú */
+
+.header{
+    top: 0;right: 0;left: 0;
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 1.4rem 10%;
+    z-index: 999;
+}
+.header .logoContent{
+    display: flex;
+    align-items: center;
+}
+
+.header .logoContent .logoName {
+    color: var(--red);
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.header .navbar a{
+    font-size: 2rem;
+    margin-right: 3rem;
+    color: var(--red);
+    font-weight: bold;
+}
+.header .navbar a:hover{
+    border-bottom: .1rem solid var(--black);
+    padding-bottom: .4rem;
+}
+.header .icon i{
+    font-size: 2rem;
+    margin-right: 2rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+#menu-bar{
+    display: none;
+}
+
+/* Fondo de pantalla principal*/
+
+.home {
+    min-height: 115vh;
+    display: flex;
+    align-items: center;
+    background: url(images/FONDO\ PRINCIPAL.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+/* 2do sección */
+
+
+.Invitacion{
+    padding: 0px 60px;
+    background-color: #000000;
+  }
+.heading{
+    text-align: center;
+    font-size: 2.2rem;
+    padding-top: 30px;
+    color: var(--white);
+    font-family: "Dancing Script", cursive;
+  }
+  
+.heading h2{
+    color: #ff0000;
+  }
+.padres{
+    font-size: 2.5rem;
+    padding-top: 35px;
+    color: #ff0000;
+  }
+  
+.nombres{
+    padding-top: 40px;
+    font-size: 2.5rem;
+    color: var(--white);
+  }
+  
+.imga img{
+    padding-top: 10px;
+    width: 30%;
+  }
+  
+.inv{
+    padding-top: 5px;
+    color: rgba(255, 0, 0, 0.519);
+    font-size: 2rem;
+  }
+  
+.xv{
+    padding-top: 5px;
+    font-size: 38px;
+    color: #ff0000;
+    font-weight: bold;
+  }
+  
+.fecha{
+    font-size: 38px;
+    color: var(--white);
+  }
+  
+
+/* Tercera seccion cards*/
+section{
+    padding: 4rem 15%;
+}
+
+.product{
+  background: url(images/FONDO_1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.heading{
+    text-align: center;
+    font-size: 2.6rem;
+    color: var(--black);
+}
+
+.heading h2{
+    color:#ff0000;
+    margin-bottom: 50PX;
+
+}
+  
+  
+  .product-content h4{
+    color: #ff0000;
+    font-size: 2rem;
+    padding-bottom: 15px;
+    font-family: "Dancing Script", cursive;
+  }
+  
+  .texto .hora{
+      font-size: 20px;
+      color: black;
+      font-weight: bold;
+      padding-bottom: 20px;
+      font-family: "Dancing Script", cursive;
+  }
+  
+  .texto .lugar{
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+    padding-bottom: 20px;
+    font-family: "Dancing Script", cursive;
+  }
+  
+  .texto .dire{
+    font-size: 15px;
+    font-weight: 300;
+    color: black;
+    padding-bottom: 40px;
+    font-family: "Dancing Script", cursive;
+  }
+
+.product .product-row{
+    margin-bottom: 5rem;
+    display: flex;
+    align-items: center;
+}
+.product .product-row .box{
+    display: flex;
+    flex-direction: column;
+    width: 100rem;
+    background-color: var(--white);
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    gap: 1.5rem;
+    border-radius: 5rem;
+    margin-right: 2rem;
+}
+.product .product-row .img img{
+    height: 100%;
+    width: 100%;
+}
+.product .product-row .img img:hover{
+    transform: scale(1.1);
+}
+.product .product-row .content {
+    margin-bottom: 4rem;
+}
+.product .product-row .product-content h3{
+    font-size: 4rem;
+    color: var(--black);
+}
+.product .product-row .product-content p{
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: var(--black);
+}
+.product .product-row .product-content .orderNow{
+    height: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.product .product-row .product-content .orderNow button{
+    font-size: 1.8rem;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: .7rem;
+    padding: .7rem 2rem;
+    cursor: pointer;
+}
+.product .product-row .product-content .orderNow button:hover{
+    font-size: 2rem;
+}
+
+
+/* 4ta seccion cronometro*/
+
+.newsletter{
+    background: url(images/FONDO_1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.newsletter form{
+    max-width: 105rem;
+    text-align: center;
+    padding: 5rem 0;
+}
+.newsletter form h3{
+    font-size: 4rem;
+    color: var(--red);
+    padding-bottom: .7rem;
+}
+
+#cuenta {
+	display: flex;
+	justify-content: center;
+  margin-top: 30px;
+}
+
+.simply-section {
+	width: 180px;
+	height: 180px;
+	margin: 0 30px;
+	border-radius: 100px;
+    border-style: solid;
+    border-color: #ffbd09;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    margin-top: 50px;
+}
+
+.simply-amount {
+  color: #ff0000;
+	display: block;
+	font-size: 50px;
+	font-weight: 300;
+    padding: 20px;
+}
+
+.simply-word {
+  color: white;
+  font-weight: 300;
+  font-size: 18px;
+  padding: 25px;
+  font-family: "Dancing Script", cursive;
+}
+
+.gift img{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0% 43%;
+    margin-bottom: 40px;
+    margin-top: 60px;
+}
+.regalostex h1{
+    color: var(--red);
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.regalostex h2{
+    color: var(--red);
+    font-size: 2rem;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/*Asistencia */
+
+.asist{
+    background-color: var(--black);
+}
+  
+.contact-me h1{
+      color: #ff0000;
+      font-size: 25px;
+      margin-bottom: 5px;
+    font-family: "Dancing Script", cursive;
+    padding: 0px 23%;
+    margin-top: 40px;
+}
+  
+.contact-me h2{
+      color: white;
+      font-size: 65px;
+      font-weight: bold;
+    font-family: "Dancing Script", cursive;
+    margin-top: 40px;
+    padding: 0px 35%;
+}
+  
+.contact-me h3{
+      color: #ff0000;
+      font-size: 25px;
+    font-family: "Dancing Script", cursive;
+      margin-bottom: 45px;
+    margin-top: 35px;
+    padding: 0px 27%;
+}
+  
+  
+.contact-me .button-two{
+      background-color:#ff0000;
+      color: white;
+      text-decoration: none;
+      border: 2px solid transparent;
+      font-weight: bold;
+      border-radius: 30px;
+      transition: .4s; 
+    font-family: "Dancing Script", cursive;
+    font-size: 25px;
+    padding: 10px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 8% 37%;
+}
+
+.contact-me .button-two:hover{
+      background-color: transparent;
+      border: 2px solid #ff0000;
+      cursor: pointer;
+}
+
+.asis{
+    max-width: 40rem;
+    margin: 0px 31%;
+}
+
+
+
+/* final */
+
+.footer {
+    background-color:gray;
+}
+
+.footer .credit{
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+    color: var(--white);
+    text-align: center;
+    
+}
+
+/* thanks for watching my video  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.swiper-pagination-bullet{
+    background-color: var(--black);
+}
+.swiper-button-next{
+    color: var(--black);
+}
+.swiper-button-prev{
+    color: var(--black);
+}
+
+
+/* media queries for web responsive */
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 1.3rem 3rem;
+    }
+
+}
+
+@media (max-width:768px) {
+    #menu-bar{
+        display: inline-block;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 25rem;
+        background-color: var(--white);
+        height: 80vh;
+    }
+    .header .navbar.active{
+        right: 0;
+    }
+    .header .navbar a{
+        display: block;
+        font-size: 2rem;
+        color: black;
+        margin: 1.5rem;
+    }
+
+    .home .homeContent{
+        margin-left: 0;
+        width: 90%;
+    }
+}
+
+@media (max-width:600px){
+    html{
+        font-size: 50%;
+    }
+}
+
+
+@media (max-width:434px){
+    
+    .home{
+    width: 134%;
+    margin: 0 auto;
+    overflow: hidden;
+    min-height: 120vh;
+    display: flex;
+    align-items: center;
+    background: url(images/Móvil_430.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    }
+}
+
+@media (max-width:376px){
+    
+    .home{
+    width: 144%;
+    margin: 0 auto;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(images/Móvil_430.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    }
+}
+
+
+@media (max-width:321px){
+    
+    .home{
+        background-size: 50%;
+        background-color: #ffbd09;
+    }
+}
+
+
